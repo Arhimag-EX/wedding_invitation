@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Приглашение на годовщину</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('images/фон.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f5f5f5;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ff3b3b;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px 25px;
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #ff3b3b;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .details {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 25px auto;
+      color: #ff3b3b;
+      font-size: 1.5rem;
+    }
+
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: 400;
+      color: #fff;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    form button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1rem;
+      background: #ff3b3b;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: 'Playfair Display', serif;
+    }
+
+    form button:hover {
+      background: #cc2e2e;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1rem;
+    }
+
+    .contact a {
+      color: #ff3b3b;
+      text-decoration: none;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>26 лет вместе</h1>
+    <p>Андрей и Виктория приглашают вас отметить годовщину свадьбы  
+    в узком кругу самых близких друзей.</p>
+  </header>
+
+  <section>
+    <h2>Дорогие друзья!</h2>
+    <p>В этом году исполняется уже <strong>26 лет</strong> с того дня,  
+    как мы стали одной семьёй. Для нас это время наполнено счастьем,  
+    любовью, заботой и самыми яркими воспоминаниями.</p>
+    <p>Мы хотим разделить эту радость с вами и приглашаем на уютный  
+    вечер дружбы, тепла и искреннего веселья.</p>
+    <div class="divider">✦ ✦ ✦</div>
+
+    <h2>Детали вечера</h2>
+    <p class="details">
+      📅 <strong>27 сентября 2025 года</strong><br>
+      🕕 Начало: <strong>18:00</strong><br>
+      📍 Адрес: село Сокулук, ул. Фрунзе 64
+    </p>
+    <div class="divider">❦</div>
+
+    <h2>Программа вечера</h2>
+    <p>
+      🍷 Тёплые воспоминания и истории<br>
+      🍷 Вкусный ужин<br>
+      🎶 Музыка и танцы<br>  
+    </p>
+    <div class="divider">✦ ✦ ✦</div>
+
+    <h2>Анкета гостя</h2>
+    <form id="guestForm">
+      <label>Фамилия семьи:</label>
+      <input type="text" name="family" required>
+
+      <label>Количество человек от семьи:</label>
+      <input type="number" name="count" min="1" required>
+
+      <label>Будете ли употреблять алкоголь?</label>
+      <select name="alcohol" required>
+        <option value="">Выберите</option>
+        <option value="Да">Да</option>
+        <option value="Нет">Нет</option>
+      </select>
+
+      <button type="submit">Отправить</button>
+    </form>
+
+    <div class="contact">
+      <p>По вопросам можно обратиться:  
+        <a href="tel:+996555328196">+996 555 328 196</a>  
+        или  
+        <a href="alinstraingjar@gmail.com">alinstraingjar@gmail.com</a>
+      </p>
+    </div>
+
+    <h2>Место встречи</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.675184314675!2d74.469!3d42.840!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c84e2e6c6f%3A0x5e0e2e1c5b6a5e91!2z0YPQuy4g0KTRgNGD0YHQvdGL0LkgNjQsINCh0YPRh9Cw0Y8!5e0!3m2!1sru!2skg!4v1694597463000"
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <script>
+    const form = document.getElementById('guestForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const text = `
+🎉 Новая анкета гостя:
+👨‍👩‍👧 Фамилия семьи: ${formData.get('family')}
+👥 Количество гостей: ${formData.get('count')}
+🍷 Алкоголь: ${formData.get('alcohol')}
+      `;
+
+      fetch(`https://api.telegram.org/bot8113150397:AAFKVZJELyxuUh3oSvfnmvHwsezmBMTilME/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: "915592266",
+          text: text
+        })
+      }).then(response => {
+        if (response.ok) {
+          alert("Спасибо! Ваш ответ отправлен.");
+          form.reset();
+        } else {
+          alert("Ошибка отправки. Попробуйте снова.");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
